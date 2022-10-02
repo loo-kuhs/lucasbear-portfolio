@@ -18,3 +18,26 @@ export const HeaderData = [
     url: "https://bitbucket.com/lucasB_py",
   },
 ];
+
+export const AboutData = [
+  {
+    id: 1,
+    title: "Experience",
+    description: "Just graduated.",
+  },
+  {
+    id: 2,
+    title: "Clients",
+    description: "0 for now.",
+  },
+  {
+    id: 3,
+    title: "Projects",
+    description: "21 completed.",
+  },
+  {
+    id: 4,
+    description:
+      "Forward-thinking Software Engineer. Fluent in object oriented programming languages used to develop software. Proud team player focused on achieving project objectives with speed and accuracy.",
+  },
+];
