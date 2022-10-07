@@ -63,12 +63,26 @@ header {
   header {
     height: 78vh;
   }
+
+  .me {
+    background: linear-gradient(
+      var(--color-primary-variant-medium),
+      transparent
+    );
+  }
 }
 
 /* Media queries (Small Devices) */
 @media screen and (max-width: 600px) {
   header {
-    height: 100vh;
+    height: 85vh;
+  }
+
+  .me {
+    background: linear-gradient(
+      var(--color-primary-variant-small),
+      transparent
+    );
   }
 
   .header__socials,

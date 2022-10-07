@@ -12,9 +12,22 @@
 
 /* Variables CSS */
 :root {
-  --color-bg: #818cf8;
-  --color-bg-variant: #6366f1;
-  --color-primary: #7fffd4;
+  /* Large screens variables */
+  --color-bg: #241623; /* #818CF8 */
+  --color-bg-variant: #3c787e; /* #6366F1 */
+  --color-primary: #d56f3e; /* #7FFFD4 */
+
+  /* Medium screens variables */
+  --color-medium: #3f5a8d;
+  --color-bg-medium: #191240; /* #818CF8 */
+  --color-bg-variant-medium: #0b081c; /* #818CF8 */
+  --color-primary-variant-medium: #4C6CA9;
+
+  /* Small screens variables*/
+  --color-bg-variant-small: #211c21; /* #6366F1 */
+  --color-primary-variant-small: #3f5a8d;
+
+  /* Others */
   --color-primary-variant: rgba(77, 181, 255, 0.4);
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
@@ -61,7 +74,7 @@ h1 {
 }
 
 section {
-  margin-top: 8rem;
+  margin-top: 1rem; /* 8rem */
 }
 
 section > h2,
@@ -118,6 +131,12 @@ img {
 
 /* Media queries (Medium Devices) */
 @media screen and (max-width: 1024px) {
+  body {
+    background: var(--color-bg-medium);
+    background-image: url(../src/assets/background-images/brick-wall.png);
+    color: var(--color-medium);
+  }
+
   .container {
     width: var(--container-width-md);
   }
@@ -125,15 +144,54 @@ img {
   section {
     margin-top: 6rem;
   }
+
+  section > h2 {
+    color: var(--color-primary-variant-medium);
+  }
+
+  a {
+    color: var(--color-primary-variant-medium);
+  }
+
+  .btn {
+    color: var(--color-primary-variant-medium);
+    border: 1px solid var(--color-primary-variant-medium);
+  }
+
+  .btn-primary {
+    background: var(--color-primary-variant-medium);
+    color: var(--color-bg-medium);
+  }
 }
 
 /* Media queries (Small Device) */
 @media screen and (max-width: 600px) {
+  body {
+    background: var(--color-bg);
+    background-image: url(../src/assets/background-images/brick-wall.png);
+    color: var(--color-white);
+  }
+
   .container {
     width: var(--container-width-sm);
   }
 
+  section {
+    margin-top: 1rem;
+  }
+
   section > h2 {
     margin-bottom: 2rem;
+    color: var(--color-primary-variant-small);
+  }
+
+  .btn {
+    color: var(--color-primary-variant-small);
+    border: 1px solid var(--color-primary-variant-small);
+  }
+
+  .btn-primary {
+    background: var(--color-primary-variant-small);
+    color: var(--color-bg-small);
   }
 }

@@ -69,6 +69,9 @@
 .about__content p {
   margin: 2rem 0 2.6rem;
   color: var(--color-light);
+  font-weight: 300;
+  text-align: justify;
+  padding: 0 1.55rem;
 }
 
 /* Media queries (Medium Devices) */
@@ -79,8 +82,22 @@
   }
 
   .about__me {
-    width: 50%;
+    width: 35%;
     margin: 2rem auto 4rem;
+    background: linear-gradient(
+      45deg,
+      transparent,
+      var(--color-primary-variant-medium),
+      transparent
+    );
+  }
+
+  .about__card {
+    background: var(--color-bg-variant-medium);
+  }
+
+  .about__icon {
+    color: var(--color-primary-variant-medium);
   }
 
   .about__content p {
@@ -91,8 +108,14 @@
 /* Media queries (Small Devices) */
 @media screen and (max-width: 600px) {
   .about__me {
-    width: 65%;
+    width: 60%;
     margin: 0 auto 3rem;
+    background: linear-gradient(
+      45deg,
+      transparent,
+      var(--color-primary-variant-small),
+      transparent
+    );
   }
 
   .about__cards {
@@ -100,6 +123,13 @@
     gap: 1rem;
   }
 
+  .about__card {
+    background: var(--color-bg-variant-small);
+  }
+
+  .about__icon {
+    color: var(--color-primary-variant-small);
+  }
   .about__content {
     text-align: center;
   }
